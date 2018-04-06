@@ -76,8 +76,6 @@ var March = [4,4,
 
 function GetWorkDay(){
     var n =  new Date();
-    n.setMonth(11);
-    n.setDate(16);
     var weekNumber = 0;
     
 
