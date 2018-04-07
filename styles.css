@@ -21,33 +21,50 @@ div{
     color: white;
 }
 
-#date{
-    background-color:gold;
-    font-size: 1.5em;
+#footer{
+    background-color:OldLace;
+    color: white;
 }
 
 #announcements{
     background-color:OldLace  ;
 }
+
+#date{
+    background-color:gold;
+    font-size: 1.5em;
+}
+
 #tools{
     background-color : WhiteSmoke ;
 }
 
-#support{
-    background-color: cornflowerblue
-}
-#map{ 
-    background-color:deeppink;
-}
+/*Link Colors*/
 
-#admin{ 
+.link1{ 
     background-color:DeepSkyBlue;
 }
 
-#teaching{ 
+.link2{ 
     background-color:LimeGreen;
 }
 
-#phone{ 
+.link3{ 
     background-color:Orange;
+}
+
+.link4{ 
+    background-color:deeppink;
+}
+
+.link5{
+    background-color: cornflowerblue
+}
+
+.phone{
+    background-color:DeepSkyBlue;
+}
+
+.fax{
+    background-color:deeppink;
 }

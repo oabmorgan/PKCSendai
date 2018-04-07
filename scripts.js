@@ -1,3 +1,5 @@
+var dayofweek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
 var April = [1,1,1,1,1,1,1,
              2,2,2,2,2,2,2,
              3,3,3,3,3,3,3,
@@ -53,6 +55,7 @@ var December = [3,
                4,7,7,7,7,7,7,
                7,0,0,0,0,0,0,
                0,0];
+
 var January = [0,0,0,0,1,
               1,1,1,1,1,1,2,
               2,2,2,2,2,2,3,
@@ -76,8 +79,10 @@ var March = [4,4,
 
 function GetWorkDay(){
     var n =  new Date();
+        
     var weekNumber = 0;
     
+    var comment = "";    
 
     if(n.getYear() != 118) //not 2018
         return n.getMonth()+1+"/"+n.getDate();
@@ -124,15 +129,17 @@ function GetWorkDay(){
     }
     
     if(weekNumber == 0)
-        return "Holiday!";
-    if(weekNumber == 5)
-        return "Summer School";
-    if(weekNumber == 6)
-        return "Halloween";
-    if(weekNumber == 7)
-        return "Christmas";
+        comment = "Holiday!";
+    else if(weekNumber == 5)
+        comment =  "Summer School";
+    else if(weekNumber == 6)
+        comment =  "Halloween!";
+    else if(weekNumber == 7)
+        comment =  "Christmas!";
+    else
+        comment = "Week "+weekNumber;
     
-    return n.getMonth()+1+"/"+n.getDate()+ ": Week "+weekNumber;
+    return dayofweek[n.getDay()] + " " + (n.getMonth()+1)+"/"+n.getDate()+ ": "+ comment;
 }
 
 document.getElementById("date").innerHTML = GetWorkDay();
