@@ -20,6 +20,7 @@ table, th, td {
     font-size: 0.9em;
     border: 1px solid black;
      border-collapse: collapse;
+    overflow: hidden;
 }
 
 th, td {
