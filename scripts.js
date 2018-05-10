@@ -142,5 +142,10 @@ function GetWorkDay(){
     return dayofweek[n.getDay()] + " " + (n.getMonth()+1)+"/"+n.getDate()+ ": "+ comment;
 }
 
+function trigger_notification()
+{
+    var notification = new Notification("Notification Title", {"body":"Message Body", "icon":"http://qnimate.com/wp-content/uploads/2014/07/web-notification-api-300x150.jpg"});     
+}
+
 document.getElementById("date").innerHTML = GetWorkDay();
 
