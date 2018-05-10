@@ -142,11 +142,5 @@ function GetWorkDay(){
     return dayofweek[n.getDay()] + " " + (n.getMonth()+1)+"/"+n.getDate()+ ": "+ comment;
 }
 
-if(Notification.permission != "granted"){
-    Notification.requestPermission();
-}
-
-var notify = new Notification("Notify Test", {"body":"This is a notification test", "icon":"7106348.png");
-
 document.getElementById("date").innerHTML = GetWorkDay();
 
