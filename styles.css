@@ -39,8 +39,13 @@ th, td {
 }
 
 #announcements{
-    background-color:OldLace  ;
-    padding-bottom: 0px;
+    background-color:OldLace;
+}
+
+
+#special{
+    background-image: url("summer.jpg");
+    background-repeat: repeat;
 }
 
 #date{
@@ -63,6 +68,10 @@ th, td {
 }
 
 /*Link Colors*/
+
+.link0{ 
+    background-color:#ff772e;
+}
 
 .link1{ 
     background-color:DeepSkyBlue;
