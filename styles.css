@@ -19,8 +19,9 @@ div{
 table, th, td {
     font-size: 0.9em;
     border: 1px solid black;
-     border-collapse: collapse;
-    white-space: nowrap;
+    border-collapse: collapse;
+    white-space:pre;
+    word-wrap: break-word;
 }
 
 th, td {
@@ -40,6 +41,7 @@ th, td {
 
 #announcements{
     background-color:OldLace;
+    padding-bottom: 0px;
 }
 
 
